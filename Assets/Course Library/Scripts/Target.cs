@@ -42,6 +42,7 @@ public class Target : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        gameManager.GameOver();
         Destroy(gameObject);
     }
 
